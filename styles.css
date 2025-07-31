@@ -1,0 +1,117 @@
+:root {
+  --blue: #0066ff;
+  --white: #ffffff;
+  --black: #131313;
+  --max-width: 700px;
+  --font-main: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  --font-head: 'Segoe UI Semibold', 'Arial Black', 'Arial', sans-serif;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--white);
+  color: var(--black);
+  font-family: var(--font-main);
+  font-size: 17px;
+  line-height: 1.7;
+  width: 100%;
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+header {
+  background: var(--blue);
+  color: var(--white);
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+}
+header h1 {
+  margin: 0 0 0.2em 0;
+  font-size: 2rem;
+  font-family: var(--font-head);
+}
+.subtitle {
+  font-size: 1.1rem;
+  margin: 0;
+}
+.date {
+  font-size: 0.97rem;
+  color: #e3eefd;
+  margin-top: 0.5em;
+}
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.2rem;
+}
+main {
+  background: var(--white);
+}
+article {
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+section {
+  margin-bottom: 2.2rem;
+}
+h2 {
+  color: var(--blue);
+  font-family: var(--font-head);
+  font-size: 1.23rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.7rem;
+}
+p {
+  margin-bottom: 1.05em;
+}
+blockquote {
+  border-left: 4px solid var(--blue);
+  background: #f6faff;
+  color: #222;
+  margin: 1.3em 0;
+  padding: 0.8em 1em 0.8em 1.4em;
+  font-style: italic;
+  border-radius: 5px;
+}
+.author {
+  border-top: 1px solid #e3eefd;
+  margin-top: 2.5rem;
+  padding-top: 1.3rem;
+  font-size: 1rem;
+}
+.author-name {
+  font-weight: bold;
+  color: var(--blue);
+  font-family: var(--font-head);
+  font-size: 1.08rem;
+  margin-bottom: 0.2em;
+}
+.author-bio {
+  color: #333;
+  font-size: 0.97rem;
+  margin-top: 0;
+}
+strong {
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 0 0.7rem;
+  }
+  header h1 {
+    font-size: 1.25rem;
+  }
+  h2 {
+    font-size: 1.007rem;
+  }
+  article {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+}
+a {
+  color: var(--blue);
+  text-decoration: underline;
+  word-break: break-word;
+}
