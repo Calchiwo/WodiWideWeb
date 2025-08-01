@@ -115,3 +115,24 @@ a {
   text-decoration: underline;
   word-break: break-word;
 }
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 32px;
+  right: 24px;
+  z-index: 100;
+  background: #0066ff;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 0.75em 1.1em;
+  border-radius: 50px;
+  font-size: 1.04rem;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0,102,255,0.17);
+  transition: background 0.2s;
+}
+#backToTop:hover, #backToTop:focus {
+  background: #0050cc;
+}
