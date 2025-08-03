@@ -145,3 +145,19 @@ a {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+/* === Back to Home Button === */
+.back-button {
+  display: inline-block;
+  margin: 20px;
+  padding: 8px 14px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #333;
+}
