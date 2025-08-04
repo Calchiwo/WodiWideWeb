@@ -4,50 +4,63 @@
   <meta charset="UTF-8">
   <title>WodiWideWeb</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Official Homepage of WodiWideWebd">
+  <meta name="description" content="Official Homepage of WodiWideWeb">
   <meta name="author" content="Caleb Chikanka Wodi (CALCHIWO)">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://wodiwideweb.com/home">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <header>
     <h1>Welcome to WodiWideWeb</h1>
     <p class="date">The story behind the scene.</p>
-    <img src="WodiWideWeb.jpg" alt="WodiWodeWeb Logo" class="featured-img">
-
+    <img src="WodiWideWeb.jpg" alt="WodiWideWeb Logo" class="featured-img">
   </header>
 
-  <main>
-    <section>
-      <p>Hi, I’m <strong>Caleb Wodi</strong> — a 15-year-old tech founder and storyteller from Nigeria. WodiWideWeb is my corner of the internet where I document my journey, share real moments, and reflect on what it means to build a future from scratch.</p>
+  <nav>
+    <ul>
+      <li><a href="/home">Home</a></li>
+      <li><a href="/why-i-started-this-blog/">Blog</a></li>
+      <li><a href="/sucamp2k25/">SU Camp</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
 
-      <p>Start reading:</p>
+  <main>
+    <section class="intro">
+      <p>
+        Hi, I’m <strong>Caleb Wodi</strong> — a 15-year-old tech founder and storyteller from Nigeria.
+        WodiWideWeb is my digital sanctuary — where I document my journey, lessons, and moments in tech, life, and faith.
+      </p>
+    </section>
+
+    <section class="start-reading">
+      <h2>Start Reading:</h2>
       <ul>
         <li><a href="why-i-started-this-blog/">Why I Started This Blog</a></li>
         <li><a href="sucamp2k25/">2k25 Scripture Union Camp: Done and Dusted</a></li>
       </ul>
     </section>
-
   </main>
+
   <footer>
-    © 2025 Rocjet Technologies Ltd. All Rights Reserved.<br>
-    Developed by Caleb Chikanka Wodi (CALCHIWO)
-
-
-
+    <p>© 2025 Rocjet Technologies Ltd. All Rights Reserved.</p>
+    <p>Developed by Caleb Chikanka Wodi (CALCHIWO)</p>
   </footer>
-<button id="backToTop" title="Back to Top">↑ Top</button>
-<script>
-  // Show button when scrolled down
-  window.onscroll = function() {
-    document.getElementById('backToTop').style.display = 
-      (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) ? 'block' : 'none';
-  };
-  // Scroll to top on click
-  document.getElementById('backToTop').onclick = function() {
-    window.scrollTo({top: 0, behavior: 'smooth'});
-  };
-</script>
+
+  <button id="backToTop" title="Back to Top">↑ Top</button>
+
+  <script>
+    window.onscroll = function() {
+      const btn = document.getElementById('backToTop');
+      btn.style.display = (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) ? 'block' : 'none';
+    };
+
+    document.getElementById('backToTop').onclick = function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
 </body>
 </html>
