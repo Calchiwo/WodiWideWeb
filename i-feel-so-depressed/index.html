@@ -69,5 +69,17 @@
     <p>Developed by Caleb Chikanka Wodi (CALCHIWO)</p>
   </footer>
 
+<button id="backToTop" title="Back to Top">↑ Top</button>
+<script>
+  // Show button when scrolled down
+  window.onscroll = function() {
+    document.getElementById('backToTop').style.display = 
+      (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) ? 'block' : 'none';
+  };
+  // Scroll to top on click
+  document.getElementById('backToTop').onclick = function() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  };
+</script>
 </body>
 </html>
