@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>404 - Page Not Found</title>
-  <link rel="stylesheet" href="styles.css">
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: 'Segoe UI', sans-serif;
       background-color: #f4f4f4;
       color: #111;
@@ -15,38 +18,60 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      flex-direction: column;
       text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
     }
 
     h1 {
-      font-size: 4em;
-      margin-bottom: 0.2em;
+      font-size: 6rem;
+      margin-bottom: 20px;
     }
 
     p {
-      font-size: 1.5em;
-      margin-bottom: 1.2em;
+      font-size: 1.6rem;
+      margin-bottom: 30px;
     }
 
     a.back-button {
       background-color: #000;
       color: #fff;
-      padding: 10px 20px;
+      padding: 12px 24px;
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
+      font-size: 1rem;
       transition: background 0.3s ease;
     }
 
     a.back-button:hover {
       background-color: #333;
     }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 4rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+
+      a.back-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>404</h1>
-  <p>Oops! The page you're looking for doesn’t exist.</p>
-  <a href="https://calchiwo.github.io/WodiWideWeb" class="back-button">← Back to Home</a>
+  <div class="container">
+    <h1>404</h1>
+    <p>Sorry, the page you're looking for doesn't exist.</p>
+    <a href="https://calchiwo.github.io/WodiWideWeb" class="back-button">← Back to Home</a>
+  </div>
 </body>
 </html>
