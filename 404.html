@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>404 - Page Not Found</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     * {
       margin: 0;
@@ -39,11 +40,12 @@
     a.back-button {
       background-color: #000;
       color: #fff;
-      padding: 12px 24px;
+      padding: 20px 40px;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 12px;
       font-weight: bold;
-      font-size: 1rem;
+      font-size: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
       transition: background 0.3s ease;
     }
 
@@ -52,40 +54,17 @@
     }
 
     @media (max-width: 600px) {
-  body {
-    padding: 40px 20px;
-    transform: scale(0.95); /* Zoom out a bit */
-  }
+      h1 {
+        font-size: 3.5rem;
+      }
 
-  .container {
-    max-width: 100%;
-  }
-
-  h1 {
-    font-size: 3.5rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-
-  a.back-button {
-    padding: 14px 28px;
-    font-size: 1.1rem;
-  }
-}
+      p {
+        font-size: 1.1rem;
+      }
 
       a.back-button {
-  background-color: #000;
-  color: #fff;
-  padding: 20px 40px;
-  text-decoration: none;
-  border-radius: 12px;
-  font-weight: bold;
-  font-size: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: background 0.3s ease;
-}
+        padding: 16px 32px;
+        font-size: 1.2rem;
       }
     }
   </style>
