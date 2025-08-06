@@ -276,3 +276,23 @@ body.dark-mode article {
   background-color: #1e1e1e;
   color: #f0f0f0;
 }
+/* Default light mode */
+body {
+  background-color: white;
+  color: black;
+}
+
+a, .blue-text {
+  color: blue; /* Light mode blue */
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark-mode a,
+body.dark-mode .blue-text {
+  color: #4dabf7; /* Light blue for dark mode */
+}
