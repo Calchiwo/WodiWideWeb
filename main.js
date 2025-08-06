@@ -25,7 +25,6 @@ darkBtn?.addEventListener('click', () => {
 // Copy link
 copyBtn?.addEventListener('click', () => {
   navigator.clipboard.writeText(window.location.href);
-  alert("Link copied to clipboard!");
 });
 
 // Smooth scroll to .start-reading section
