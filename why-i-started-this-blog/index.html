@@ -11,7 +11,15 @@
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-<a href="https://calchiwo.github.io/WodiWideWeb/" class="back-button">← Back to Home</a>
+<div class="top-bar">
+  <a href="https://calchiwo.github.io/WodiWideWeb/" class="back-button">← Back to Home</a>
+  
+  <div class="top-right-buttons">
+    <button id="light-mode-btn" title="Light Mode">🌞</button>
+    <button id="dark-mode-btn" title="Dark Mode">🌛</button>
+    <button id="copy-link-btn" title="Copy Link">🔗</button>
+  </div>
+</div>
   <header>
     <div class="container">
       <h1>Why I Started This Blog (And Why I Won’t Stop)</h1>
@@ -102,5 +110,6 @@
     window.scrollTo({top: 0, behavior: 'smooth'});
   };
 </script>
+<script src="../main.js"></script>
 </body>
 </html>
