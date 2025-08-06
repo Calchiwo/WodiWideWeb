@@ -220,6 +220,22 @@ a {
   color: #0077cc;
 }
 
+/* TOP BAR */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.back-button {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #0077cc;
+}
+
 .top-right-buttons button {
   background: none;
   border: none;
@@ -228,6 +244,19 @@ a {
   cursor: pointer;
 }
 
+/* LIGHT MODE (Default) */
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+article {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 1rem;
+}
+
+/* DARK MODE */
 body.dark-mode {
   background-color: #121212;
   color: #f0f0f0;
@@ -240,5 +269,10 @@ body.dark-mode .top-bar {
 
 body.dark-mode a,
 body.dark-mode button {
+  color: #f0f0f0;
+}
+
+body.dark-mode article {
+  background-color: #1e1e1e;
   color: #f0f0f0;
 }
