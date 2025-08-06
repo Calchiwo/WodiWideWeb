@@ -3,8 +3,6 @@ window.onload = function () {
   if (localStorage.getItem("darkMode") === "enabled") {
     document.body.classList.add("dark-mode");
   }
-
-  // Set correct button states if needed (optional)
 };
 
 // Theme buttons
@@ -27,4 +25,10 @@ darkBtn?.addEventListener('click', () => {
 // Copy link
 copyBtn?.addEventListener('click', () => {
   navigator.clipboard.writeText(window.location.href);
+  alert("Link copied to clipboard!");
+});
+
+// Smooth scroll to .start-reading section
+document.getElementById('scrollToStart')?.addEventListener('click', function () {
+  document.querySelector('.start-reading')?.scrollIntoView({ behavior: 'smooth' });
 });
