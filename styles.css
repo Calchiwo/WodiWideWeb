@@ -302,3 +302,22 @@ body.dark-mode .top-right-buttons button {
   width: 28px;
   height: 28px;
 }
+<style>
+  #scrollToStart {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    padding: 8px 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  #scrollToStart:hover {
+    background-color: #555;
+  }
+</style>
