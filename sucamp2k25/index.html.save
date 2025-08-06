@@ -9,6 +9,8 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://wodiwideweb.com/2k25-scripture-union-camp-done-and-dusted">
   <link rel="stylesheet" href="../styles.css">
+  <script src="../main.js"></script>
+</body>
 </head>
 <body>
 <div class="top-bar">
@@ -87,6 +89,5 @@
     window.scrollTo({top: 0, behavior: 'smooth'});
   };
 </script>
-<script src="../main.js"></script>
 </body>
 </html>
