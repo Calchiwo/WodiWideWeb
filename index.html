@@ -2,22 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>WodiWideWeb</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Official Homepage of WodiWideWeb">
+  <title>WodiWideWeb – Caleb Wodi's Personal Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WodiWideWeb is the official blog of Caleb Wodi – 15-year-old tech founder and storyteller from Nigeria. Follow his journey in tech, life, and faith.">
   <meta name="author" content="Caleb Chikanka Wodi (CALCHIWO)">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://wodiwideweb.com">
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wodiwideweb.com">
+  <meta property="og:title" content="WodiWideWeb – Caleb Wodi's Personal Blog">
+  <meta property="og:description" content="A digital sanctuary where Caleb Wodi documents his journey through tech, life, and faith.">
+  <meta property="og:image" content="WodiWideWeb.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="WodiWideWeb – Caleb Wodi's Personal Blog">
+  <meta name="twitter:description" content="Follow Caleb's journey in tech, life, and faith.">
+  <meta name="twitter:image" content="WodiWideWeb.jpg">
 </head>
 <body>
-<div class="top-bar">
-  <div class="top-right-buttons">
-    <button id="light-mode-btn" title="Light Mode">🌞</button>
-    <button id="dark-mode-btn" title="Dark Mode">🌛</button>
-    <button id="copy-link-btn" title="Copy Link">🔗</button>
+  <div class="top-bar">
+    <div class="top-right-buttons">
+      <button id="light-mode-btn" title="Light Mode" aria-label="Light Mode">🌞</button>
+      <button id="dark-mode-btn" title="Dark Mode" aria-label="Dark Mode">🌛</button>
+      <button id="copy-link-btn" title="Copy Link" aria-label="Copy Link">🔗</button>
+    </div>
   </div>
-</div>
+
   <header>
     <h1>Welcome to WodiWideWeb</h1>
     <p class="date">The story behind the scene.</p>
@@ -28,40 +42,35 @@
     <section class="intro">
       <p>
         Hi, I’m <strong>Caleb Wodi</strong> — a 15-year-old tech founder and storyteller from Nigeria.
-        WodiWideWeb is my digital sanctuary — where I document my journey, lessons, and moments in tech, life, and faith.
+        <strong>WodiWideWeb</strong> is my digital sanctuary — where I document my journey, lessons, and moments in tech, life, and faith.
       </p>
     </section>
 
     <section class="start-reading">
-  <h2>Start Reading:</h2>
-  <ul>
-    <li class="blog-post">
-      <a href="why-i-started-this-blog/">Why I Started This Blog</a>
-      <time datetime="2025-07-31">Published on July 31, 2025</time>
-    </li>
-
-    <li class="blog-post">
-      <a href="sucamp2k25/">2k25 Scripture Union Camp: Done and Dusted</a>
-      <time datetime="2025-08-03">Published on August 3, 2025</time>
-    </li>
-
-    <li class="blog-post">
-      <a href="i-feel-so-depressed/">I Feel So Depressed 😔</a>
-      <time datetime="2025-08-04">Published on August 4, 2025</time>
-    </li>
-
-    <li class="blog-post">
-      <a href="how-i-started-rocjet/">How I Started Rocjet Technologies Ltd</a>
-      <time datetime="2025-08-05">Published on August 5, 2025</time>
-    </li>
-
-    <li class="blog-post">
-      <a href="my-first-office/">My First Office</a>
-      <time datetime="2025-08-05">Published on August 5, 2025</time>
-    </li>
-  </ul>
-</section>
-
+      <h2>Start Reading:</h2>
+      <ul>
+        <li class="blog-post">
+          <a href="why-i-started-this-blog/">Why I Started This Blog</a>
+          <time datetime="2025-07-31">Published on July 31, 2025</time>
+        </li>
+        <li class="blog-post">
+          <a href="sucamp2k25/">2k25 Scripture Union Camp: Done and Dusted</a>
+          <time datetime="2025-08-03">Published on August 3, 2025</time>
+        </li>
+        <li class="blog-post">
+          <a href="i-feel-so-depressed/">I Feel So Depressed 😔</a>
+          <time datetime="2025-08-04">Published on August 4, 2025</time>
+        </li>
+        <li class="blog-post">
+          <a href="how-i-started-rocjet/">How I Started Rocjet Technologies Ltd</a>
+          <time datetime="2025-08-05">Published on August 5, 2025</time>
+        </li>
+        <li class="blog-post">
+          <a href="my-first-office/">My First Office</a>
+          <time datetime="2025-08-05">Published on August 5, 2025</time>
+        </li>
+      </ul>
+    </section>
   </main>
 
   <footer>
@@ -69,18 +78,18 @@
     <p>Developed by Caleb Chikanka Wodi (CALCHIWO)</p>
   </footer>
 
-  <button id="backToTop" title="Back to Top">↑ Top</button>
+  <button id="backToTop" title="Back to Top" aria-label="Back to Top">↑ Top</button>
 
   <script>
-    window.onscroll = function() {
+    window.onscroll = function () {
       const btn = document.getElementById('backToTop');
       btn.style.display = (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) ? 'block' : 'none';
     };
 
-    document.getElementById('backToTop').onclick = function() {
+    document.getElementById('backToTop').onclick = function () {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     };
   </script>
-<script src="../main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
