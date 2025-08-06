@@ -1,16 +1,31 @@
+// Load saved theme on page load
+window.onload = function () {
+  if (localStorage.getItem("darkMode") === "enabled") {
+    document.body.classList.add("dark-mode");
+  }
+
+  // Set correct button states if needed (optional)
+};
+
+// Theme buttons
 const lightBtn = document.getElementById('light-mode-btn');
 const darkBtn = document.getElementById('dark-mode-btn');
 const copyBtn = document.getElementById('copy-link-btn');
 
-lightBtn.addEventListener('click', () => {
+// Light mode
+lightBtn?.addEventListener('click', () => {
   document.body.classList.remove('dark-mode');
+  localStorage.setItem("darkMode", "disabled");
 });
 
-darkBtn.addEventListener('click', () => {
+// Dark mode
+darkBtn?.addEventListener('click', () => {
   document.body.classList.add('dark-mode');
+  localStorage.setItem("darkMode", "enabled");
 });
 
-copyBtn.addEventListener('click', () => {
+// Copy link
+copyBtn?.addEventListener('click', () => {
   navigator.clipboard.writeText(window.location.href)
     .then(() => alert('🔗 Link copied to clipboard!'))
     .catch(() => alert('❌ Failed to copy link'));
