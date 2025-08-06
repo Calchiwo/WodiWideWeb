@@ -26,5 +26,4 @@ darkBtn?.addEventListener('click', () => {
 
 // Copy link
 copyBtn?.addEventListener('click', () => {
-  navigator.clipboard.writeText(window.location.href);
-});
+  navigator.clipboard.writeText(window.location.href)
