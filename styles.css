@@ -244,7 +244,7 @@ a {
   cursor: pointer;
 }
 
-/* GENERAL LIGHT MODE (Default) */
+/* LIGHT MODE (default) */
 body {
   background-color: #ffffff;
   color: #000000;
@@ -255,10 +255,7 @@ article {
   color: #000000;
 }
 
-a {
-  color: blue;
-}
-
+a,
 .blue-text {
   color: blue;
 }
@@ -279,12 +276,10 @@ body.dark-mode article {
   color: #f0f0f0;
 }
 
-body.dark-mode a {
-  color: #4dabf7;
-}
-
+/* Proper dark mode link and blue text color */
+body.dark-mode a,
 body.dark-mode .blue-text {
-  color: #4dabf7;
+  color: #4dabf7 !important;
 }
 
 body.dark-mode .top-right-buttons button {
