@@ -302,26 +302,23 @@ body.dark-mode .top-right-buttons button {
   width: 28px;
   height: 28px;
 }
-#scrollToStart {
-  display: none;
-  position: fixed;
-  top: 32px;
-  left: 24px;
-  z-index: 100;
-  background: #0066ff;
+.scrollToStart {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
   color: #fff;
-  border: none;
-  outline: none;
-  padding: 0.75em 1.1em;
-  border-radius: 50px;
-  font-size: 1.04rem;
-  font-family: inherit;
+  padding: 10px 20px;
+  border-radius: 30px;
   cursor: pointer;
-  box-shadow: 0 4px 16px rgba(0,102,255,0.17);
-  transition: background 0.2s;
+  font-size: 14px;
+  text-align: center;
+  z-index: 1000;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-#scrollToStart:hover,
-#scrollToStart:focus {
-  background: #0050cc;
+.scrollToStart:hover {
+  background-color: #333;
+  transform: translateX(-50%) scale(1.05);
 }
