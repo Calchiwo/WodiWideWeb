@@ -304,21 +304,24 @@ body.dark-mode .top-right-buttons button {
 }
 .scrollToStart {
   position: absolute;
-  bottom: 20px;
+  bottom: 40px; /* Move it a bit higher for visibility */
   left: 50%;
   transform: translateX(-50%);
   background-color: #000;
   color: #fff;
-  padding: 10px 20px;
-  border-radius: 30px;
+  padding: 16px 32px;         /* Increase padding (size) */
+  border-radius: 40px;        /* Larger pill shape */
   cursor: pointer;
-  font-size: 14px;
+  font-size: 18px;            /* Increase text size */
+  font-weight: 600;           /* Bold text */
   text-align: center;
   z-index: 1000;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  /* Add subtle shadow for depth */
 }
 
 .scrollToStart:hover {
-  background-color: #333;
-  transform: translateX(-50%) scale(1.05);
+  background-color: #222;
+  transform: translateX(-50%) scale(1.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow on hover */
 }
