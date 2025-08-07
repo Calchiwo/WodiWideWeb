@@ -307,7 +307,7 @@ body.dark-mode .top-right-buttons button {
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #007BFF;       /* Blue background */
+  background-color: #000000;       /* Blue background */
   color: #fff;
   padding: 14px 28px;              /* Balanced size for text */
   border-radius: 20px;             /* Soft rounded edges */
