@@ -280,7 +280,7 @@ body.dark-mode .intro {
 
 /* Proper dark mode link and blue text color */
 body.dark-mode a,
-body.dark-mode .blue-text {
+body.dark-mode .red-text {
   color: #4dabf7 !important;
 }
 
