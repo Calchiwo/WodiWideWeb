@@ -366,7 +366,7 @@ body.dark-mode .top-right-buttons button {
 }
 /* Newsletter Section */
 .newsletter {
-  background-color: #1e88e5; /* WodiWideWeb blue */
+  background-color: #3b82f6; /* Matches WodiWaitlist button's start color */
   color: white;
   padding: 0.8rem 1.2rem;
   text-align: center;
@@ -377,7 +377,7 @@ body.dark-mode .top-right-buttons button {
 }
 
 .newsletter a {
-  color: #bbdefb;
+  color: #dbeafe; /* light blue to match your theme */
   text-decoration: underline;
   transition: color 0.3s ease;
 }
