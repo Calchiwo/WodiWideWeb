@@ -364,3 +364,24 @@ body.dark-mode .top-right-buttons button {
   60% { transform: translateX(-4px); }
   80% { transform: translateX(4px); }
 }
+/* Newsletter Section */
+.newsletter {
+  background-color: #1e88e5; /* WodiWideWeb blue */
+  color: white;
+  padding: 0.8rem 1.2rem;
+  text-align: center;
+  font-size: 0.95rem; /* slightly small text */
+  border-radius: 6px;
+  margin: 20px auto;
+  max-width: 700px;
+}
+
+.newsletter a {
+  color: #bbdefb;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.newsletter a:hover {
+  color: white;
+}
