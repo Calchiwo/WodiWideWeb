@@ -386,6 +386,6 @@ body.dark-mode .top-right-buttons button {
   color: white;
 }
 .logo {
-    width: 150px;     /* or any fixed size */
+   max-width: 100%;     /* or any fixed size */
     height: auto;     /* keeps aspect ratio */
 }
