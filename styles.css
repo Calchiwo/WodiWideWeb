@@ -385,3 +385,7 @@ body.dark-mode .top-right-buttons button {
 .newsletter a:hover {
   color: white;
 }
+.logo {
+    width: 150px;     /* or any fixed size */
+    height: auto;     /* keeps aspect ratio */
+}
