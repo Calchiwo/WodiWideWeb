@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting to a Random Story...</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #111;
+      color: #0f0;
+      font-family: monospace, sans-serif;
+      font-size: 1.5rem;
+    }
+    #loading {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="loading">Taking you to a Random Story........ 0%</div>
+
+  <script>
+    async function loadBlogsAndRedirect() {
+      try {
+        const res = await fetch("/blog/index.json");
+        const blogs = await res.json();
+
+        let percent = 0;
+        const loadingText = document.getElementById("loading");
+
+        const interval = setInterval(() => {
+          percent++;
+          loadingText.textContent = `Taking you to a Random Story........ ${percent}%`;
+          if (percent >= 100) {
+            clearInterval(interval);
+            const randomBlog = blogs[Math.floor(Math.random() * blogs.length)];
+            window.location.href = `/blog/${randomBlog}`;
+          }
+        }, 25); // speed (25ms * 100 = ~2.5s total)
+
+      } catch (err) {
+        document.getElementById("loading").textContent = "⚠️ Error loading blogs.";
+        console.error("Error fetching blog list:", err);
+      }
+    }
+
+    loadBlogsAndRedirect();
+  </script>
+</body>
+</html>
