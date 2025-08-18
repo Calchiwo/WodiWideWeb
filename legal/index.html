@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disclaimer & Privacy Policy | WodiWideWeb</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Read the Disclaimer and Privacy Policy of WodiWideWeb. Personal storytelling platform by Caleb Wodi.">
+  <meta name="author" content="Caleb Wodi (Calchiwo)">
+  <meta name="keywords" content="WodiWideWeb, Disclaimer, Privacy Policy, Caleb Wodi, storytelling, personal blog">
+  <link rel="canonical" href="https://wodiwideweb.netlify.app.com/disclaimer">
+
+  <!-- Styles -->
+  <style>
+    body {
+      font-family: "Georgia", "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #222;
+      background: #fafafa;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      gap: 2rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: #0077cc;
+    }
+
+    main {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: #111;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/disclaimer" data-scroll="#disclaimer">Disclaimer</a>
+      <a href="/privacy-policy" data-scroll="#privacy-policy">Privacy Policy</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="disclaimer">
+      <h2>Disclaimer</h2>
+      <p>WodiWideWeb is a personal storytelling platform where I, Caleb Chikanka Wodi (Calchiwo), share real-life experiences, reflections, and events from my past. Every story here is based on my own memory, perspective, and personal journey.</p>
+      <p>While I aim for honesty and accuracy, some details may be simplified, condensed, or altered slightly for clarity, privacy, and storytelling flow. The goal is to share authentic moments — not to misrepresent people or events.</p>
+      <p>This platform is not affiliated with any media organization and is not intended as professional news reporting.</p>
+      <p>All content is written by me unless clearly stated otherwise. Any views or interpretations expressed are entirely my own.</p>
+      <p>The platform is not responsible for how users interpret or use the content. Views expressed here are entirely my own.</p>
+    </section>
+
+    <section id="privacy-policy">
+      <h2>Privacy Policy</h2>
+      <p>This site does not collect personal data without your knowledge. If any data is collected (e.g., through forms, email subscriptions, or anonymous analytics), it will be handled responsibly and never shared with third parties.</p>
+    </section>
+  </main>
+
+  <!-- Smooth Scroll + URL update -->
+  <script>
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('data-scroll');
+        const target = document.querySelector(targetId);
+        
+        if (target) {
+          window.scrollTo({
+            top: target.offsetTop - 60,
+            behavior: 'smooth'
+          });
+          history.pushState(null, null, this.getAttribute('href'));
+        }
+      });
+    });
+
+    // Auto-scroll if user visits /privacy-policy or /disclaimer directly
+    window.addEventListener('load', () => {
+      if (window.location.pathname.includes("privacy-policy")) {
+        document.querySelector("#privacy-policy").scrollIntoView({behavior: "smooth"});
+      } else if (window.location.pathname.includes("disclaimer")) {
+        document.querySelector("#disclaimer").scrollIntoView({behavior: "smooth"});
+      }
+    });
+  </script>
+</body>
+</html>
