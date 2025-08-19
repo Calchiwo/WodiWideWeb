@@ -2,8 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>404 - Page Not Found</title>
+  <title>404 - WodiWideWeb</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Oops! The page you’re looking for on WodiWideWeb doesn’t exist yet. Discover stories or head back home.">
+  <meta name="author" content="Caleb Wodi - WodiWideWeb">
+  <meta property="og:title" content="404 - WodiWideWeb">
+  <meta property="og:description" content="Oops! The page you’re looking for on WodiWideWeb doesn’t exist yet.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wodiwideweb.netlify.app/404">
+  <meta property="og:site_name" content="WodiWideWeb">
+  <meta name="theme-color" content="#000000">
+
   <style>
     * {
       margin: 0;
@@ -13,7 +22,7 @@
 
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
+      background-color: #f9f9f9;
       color: #111;
       display: flex;
       justify-content: center;
@@ -24,73 +33,74 @@
     }
 
     .container {
-      max-width: 600px;
+      max-width: 700px;
+      width: 100%;
     }
 
     h1 {
-      font-size: 6rem;
-      margin-bottom: 20px;
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+      font-weight: 700;
+      line-height: 1.3;
     }
 
     p {
-      font-size: 1.6rem;
-      margin-bottom: 30px;
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+      color: #444;
     }
 
-    a.back-button {
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    a.button {
+      flex: 1;
+      min-width: 140px;
+      text-align: center;
       background-color: #000;
       color: #fff;
-      padding: 20px 40px;
+      padding: 14px 20px;
       text-decoration: none;
-      border-radius: 12px;
-      font-weight: bold;
-      font-size: 1.5rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      transition: background 0.3s ease;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: background 0.3s ease, transform 0.2s ease;
     }
 
-    a.back-button:hover {
+    a.button:hover {
       background-color: #333;
+      transform: translateY(-2px);
     }
 
-    a.random-button {
-      background-color: #000;
-      color: #fff;
-      padding: 20px 40px;
-      text-decoration: none;
-      border-radius: 12px;
-      font-weight: bold;
-      font-size: 1.5rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      transition: background 0.3s ease;
-    }
-
-    a.random-button:hover {
-      background-color: #333;
-    }
-
-    @media (max-width: 600px) {
+    @media (min-width: 768px) {
       h1 {
-        font-size: 3.5rem;
+        font-size: 2.8rem;
       }
 
       p {
-        font-size: 1.1rem;
+        font-size: 1.25rem;
       }
 
-      a.back-button {
-        padding: 16px 32px;
-        font-size: 1.2rem;
+      a.button {
+        font-size: 1.1rem;
+        padding: 16px 24px;
       }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Sorry, this page you're looking for doesn't exist (yet)</h1>
-    <p>Maybe I haven't lived that story</p>
-    <a href="https://wodiwideweb.netlify.app" class="back-button">← Back to Home</a>
-    <a href="https://wodiwideweb.netlify.app/random" class="random-button">Read a Random Story</a>
+    <h1>Sorry, the page you’re looking for doesn’t exist (yet)</h1>
+    <p>Maybe I haven’t lived that story on <strong>WodiWideWeb</strong>… but you can still explore!</p>
+    <div class="button-group">
+      <a href="https://wodiwideweb.netlify.app" class="button">← Back to Home</a>
+      <a href="https://wodiwideweb.netlify.app/r" class="button">Read a Random Story →</a>
+    </div>
   </div>
 </body>
 </html>

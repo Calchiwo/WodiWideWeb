@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>404 - Page Not Found</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+    }
+
+    h1 {
+      font-size: 6rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.6rem;
+      margin-bottom: 30px;
+    }
+
+    a.back-button {
+      background-color: #000;
+      color: #fff;
+      padding: 20px 40px;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s ease;
+    }
+
+    a.back-button:hover {
+      background-color: #333;
+    }
+
+    a.random-button {
+      background-color: #000;
+      color: #fff;
+      padding: 20px 40px;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s ease;
+    }
+
+    a.random-button:hover {
+      background-color: #333;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 3.5rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+
+      a.back-button {
+        padding: 16px 32px;
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sorry, this page you're looking for doesn't exist (yet)</h1>
+    <p>Maybe I haven't lived that story</p>
+    <a href="https://wodiwideweb.netlify.app" class="back-button">← Back to Home</a>
+    <a href="https://wodiwideweb.netlify.app/r" class="random-button">Read a Random Story</a>
+  </div>
+</body>
+</html>
