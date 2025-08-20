@@ -411,3 +411,45 @@ body.dark-mode .top-right-buttons button {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+.ecosystem {
+  background: #f9f9f9;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.ecosystem h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.ecosystem ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ecosystem li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.ecosystem .icon {
+  flex-shrink: 0;
+  font-size: 1.3rem;
+  margin-right: 0.6rem;
+}
+
+.ecosystem a {
+  color: #0077cc;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.ecosystem a:hover {
+  text-decoration: underline;
+}
