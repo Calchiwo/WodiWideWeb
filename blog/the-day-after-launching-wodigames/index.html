@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Day After Launch — Building My First WodiGame</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="The day after launching WodiGames, Caleb Wodi shares the first game built under the project — a simple yet powerful Go Game." />
+  <meta name="keywords" content="WodiGames, WodiGo, Caleb Wodi, BuiltByWodi, Go game, Nigerian game developer, indie games, HTML games, JavaScript games" />
+  <meta name="author" content="Caleb Chikanka Wodi (CALCHIWO)" />
+  <link rel="canonical" href="https://wodiwideweb.netlify.app/blog/the-day-after-launching-wodigames" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="The Day After Launch — Building My First WodiGame" />
+  <meta property="og:description" content="Caleb Wodi shares the first game built under WodiGames — a simple yet powerful Go Game." />
+  <meta property="og:image" content="https://calchiwo.github.io/WodiWideWeb/assets/wodi-go-game.png" />
+  <meta property="og:url" content="https://wodiwideweb.netlify.app/blog/the-day-after-launching-wodigames" />
+  <meta property="og:type" content="article" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Day After Launch — Building My First WodiGame" />
+  <meta name="twitter:description" content="Caleb Wodi shares the first game built under WodiGames — a simple yet powerful Go Game." />
+  <meta name="twitter:image" content="https://wodiwideweb/the-day-after-launching-wodigames/wodi-go-game.png" />
+
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+</head>
+<body>
+  <div class="top-bar">
+    <a href="https://wodiwideweb.netlify.app/" class="back-button">← Back to Home</a>
+    <div class="top-right-buttons">
+      <button id="light-mode-btn" title="Light Mode">🌞</button>
+      <button id="dark-mode-btn" title="Dark Mode">🌛</button>
+      <button id="copy-link-btn" title="Share this page" aria-label="Share this page" class="share-button">
+        <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 0 24 24" width="40" fill="currentColor">
+          <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7a3.062 3.062 0 000-.81l7.05-4.11A2.993 2.993 0 0018 7.91c1.66 0 3 1.35 3 3s-1.34 3.17-3 3.17c-.31 0-.61-.05-.89-.14l-7.05 4.1"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <main>
+    <article class="blog-post" itemscope itemtype="https://schema.org/Article">
+      <header>
+        <h1 itemprop="headline">The Day After Launch — Building My First WodiGame</h1>
+        <p><strong>📅 Published on:</strong> <time datetime="2025-08-21" itemprop="datePublished">August 21, 2025</time></p>
+        <p><strong>✍️ Written by:</strong> <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Caleb Chikanka Wodi</span></span></p>
+      </header>
+
+      <section itemprop="articleBody">
+        <img src="wodi-go-game.png" alt="Screenshot of Wodi Go Game" />
+
+        <p>Yesterday, August 20, I officially launched WodiGames. It marked the beginning of a new chapter in my journey — not just announcing the idea, but actually bringing games to life.</p>
+
+        <p>Today, I’m excited to share the very first game I’ve built under WodiGames: a simple yet powerful Go Game.</p>
+
+        <p>You can play it here:<br>
+        👉 <a href="https://wodigames.netlify.app/games/go" target="_blank">https://wodigames.netlify.app/games/go</a></p>
+
+        <p>This game was created entirely with pure HTML, CSS, and JavaScript. No frameworks, no shortcuts — just the raw web technologies that power the internet. For me, it’s more than a game; it’s proof that from the very basics, something fun and interactive can come alive.</p>
+
+        <p>And this is only the beginning. WodiGames is meant to grow into a collection of playful, lightweight, and creative experiences. More games are coming — each one built with passion, curiosity, and the drive to make gaming accessible to everyone.</p>
+
+        <p>This journey is just getting started.</p>
+
+        <p>— Caleb Chikanka Wodi</p>
+      </section>
+
+      <footer class="post-footer">
+        <p>© 2025 Rocjet Technologies Ltd | BuiltByWodi®</p>
+      </footer>
+    </article>
+  </main>
+
+  <button id="backToTop" title="Back to Top">↑ Top</button>
+
+  <script>
+    // Show button when scrolled down
+    window.onscroll = function () {
+      document.getElementById('backToTop').style.display =
+        (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) ? 'block' : 'none';
+    };
+
+    // Scroll to top on click
+    document.getElementById('backToTop').onclick = function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+  <script src="../../main.js"></script>
+</body>
+</html>
