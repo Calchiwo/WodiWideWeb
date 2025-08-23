@@ -453,3 +453,16 @@ body.dark-mode .top-right-buttons button {
 .ecosystem a:hover {
   text-decoration: underline;
 }
+.image-row {
+  display: flex;
+  flex-wrap: wrap;       /* allows wrapping on small screens */
+  justify-content: center; /* centers the images horizontally */
+  gap: 15px;             /* space between images */
+}
+
+.image-row img {
+  max-width: 180px;      /* keeps images from being too large */
+  width: 100%;           /* makes it responsive */
+  height: auto;          /* maintains aspect ratio */
+  border-radius: 8px;    /* optional: smooth corners */
+}
