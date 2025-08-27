@@ -1,11 +1,12 @@
 # 🚀 Updates  
-This file documents important milestones, announcements, and progress for this repository.  
+This file documents important milestones, announcements, and progress for WodiWideWeb. 
 
 ---
 
 ## July 31, 2025 – Launched WodiWideWeb
 **What happened:**  
-- Officially launched this repository.  
-- Shared the vision and purpose behind the project.  
+- Officially launched WodiWideWeb.  
+- Shared the vision and purpose behind the project.
+- Made My First Blog Post on WodiWideWeb.
 
 ___
